@@ -11,6 +11,7 @@ import { CustomersService } from './customers.service';
     declarations: [
         CustomersComponent, CustomerListComponent, CustomerDetailComponent
     ],
+    // 在惰性模块的子注入器中注册:只能在惰性模块中使用
     providers: [CustomersService]
 })
 export class CustomersModule { }

@@ -4,7 +4,8 @@ import { CustomersComponent } from './customers/customer.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'contact', pathMatch: 'full' },
-    { path: 'customers', loadChildren: 'customers/customers.module#CustomersModule' }
+    { path: 'items', loadChildren: './items/items.module#ItemsModule' },
+    { path: 'customers', loadChildren: './customers/customers.module#CustomersModule' }
 ];
 
 @NgModule({
